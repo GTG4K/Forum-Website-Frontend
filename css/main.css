@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: #1D1D1D;
+}
+
+.body-container{
+    position: absolute;
+    top: 70px;
+    height: calc(100vh - 70px);
+    width: 100%;
+    z-index: 0;
+}
+
+#backdrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.60);
+    display: none;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 750px) {
+    
+    .body-container{
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+
+}

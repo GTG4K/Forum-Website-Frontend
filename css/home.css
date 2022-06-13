@@ -1,0 +1,164 @@
+.home-container{
+    width: 1050px;
+    margin: 0 auto;
+    background-color: rgb(36, 34, 42);
+    padding: 0 0 10px 0;
+}
+
+.page-name{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    background-color: rgb(35, 30, 45);
+    align-items: center;
+    padding: 0 50px;
+}
+
+.page-name > i{
+    width: 25px;
+    height: 25px;
+    color: white;
+    padding: 0 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container{
+    cursor: pointer;
+    user-select: none;
+}
+
+.page-name > h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0 0 0 5px;
+    font-weight: 400;
+}
+
+.content-title{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-color: rgb(46, 41, 61);
+    align-items: center;
+    padding: 0 50px;
+}
+
+.content-title > i{
+    width: 25px;
+    height: 25px;
+    color: white;
+    padding: 0 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.content-title > h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0 0 0 5px;
+    font-weight: 400;
+}
+
+.page-contents{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-content{
+    width: 460px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.page-content-about{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page-content-about > img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.page-content > img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.content-details{
+    border-radius: 0 0 5px 5px;
+    padding: 0px 40px;
+    overflow: hidden;
+}
+
+.content-details > h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 0;
+}
+
+.content-details > p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 0;
+    width: 95%;
+}
+
+@media only screen and (max-width: 1050px) {
+    .home-container{
+        width: 100%;
+    }
+    .page-content{
+        width: 85%;
+        padding: 10px 0;
+        margin: 0 auto;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .page-name{
+        height: 35px;
+        padding: 0 5px;
+    }
+    .page-content{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .page-content > img{
+        border-radius: 0;
+    }
+    .content-details{
+        border-radius: 0;
+        background-color: rgb(48, 46, 56);
+        padding: 0px 15px 15px 15px;
+        overflow: hidden;
+    }
+    .page-content-about{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .page-content-about > img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+}

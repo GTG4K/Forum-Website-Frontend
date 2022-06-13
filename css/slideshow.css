@@ -1,0 +1,34 @@
+.slideshow{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* display: none; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .slideshow{
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .slideshow{
+        height: 300px;
+    }
+}
+/* .slideshow > img:first-child{
+    display: block;
+} */

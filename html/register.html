@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts | font-family: 'Montserrat', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Sheets -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/forms.css">
+
+    <title>Home</title>
+</head>
+<body>
+
+    <!-- Dark Backdrop -->
+    <div id="backdrop">
+
+    </div>
+
+    <!-- Header -->
+    <header class="accordion">
+        <div class="inner-header">
+
+            <div class="logo-space">
+                <div class="logo-container">
+                    <h1>My<span id="logo-color"> FORUM </span></h1>
+                </div>
+                <h1 id="menu-extender" class="menu-extender">+</h1>
+            </div>
+
+            <div id="header-input" class="header-inputs active">
+                <div class="header-left-row">
+                    <a href="../html/home.html">Home</a>
+                    <a href="../html/about.html">About</a>
+                    <a href="../html/community.html">Community</a>
+                </div>
+                <div class="header-right-row">
+                    <div class="right-row-inputs">
+                        <a href="../html/login.html">Sign in</a>
+                        <a class="active" href="../html/register.html">Register</a>
+                    </div>
+                    <div class="profile-picture-holder">
+                        <img class="profile-picture" src="../assets/img/Default.jpg" alt="default image">
+                        <h3 class="profile-username">Guest</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Body -->
+    <div class="body-container">
+
+        <div class="page-name">
+            <i class="fas fa-info-circle"></i>
+            <h2>Regirster</h2>
+        </div>
+
+        <div class="register">
+            <div class="form-input">
+                <span class="error"></span>
+                <input class="form-input-field" type="text" name="name" id="name">
+                <label for="name">Username</label>
+            </div>
+            <div class="form-input">
+                <span class="error email-error"></span>
+                <input class="form-input-field" type="email" name="Email" id="Email">
+                <label for="Email">Email</label>
+            </div>
+            <div class="form-input">
+                <span class="error pwd-error"></span>
+                <div class="password-strength"></div>
+                <input class="form-input-field" type="password" name="pwd" id="pwd">
+                <label for="pwd">Password</label>
+            </div>
+            <div class="form-input">
+                <span class="error"></span>
+                <input class="form-input-field" type="password" name="repeatpwd" id="repeatpwd">
+                <label for="repeatpwd">Repeat Password</label>
+            </div>
+            <div class="form-input">
+                <span class="error"></span>
+                <input class="form-input-field" type="text" name="country" id="country">
+                <label for="country">country</label>
+            </div>
+            <div class="form-input">
+                <span class="error"></span>
+                <input class="form-input-field" type="text" name="city" id="city">
+                <label for="city">city</label>
+            </div>
+            <div class="form-input">
+                <span class="error"></span>
+                <input class="form-input-field" type="number" name="mobilenum" id="mobilenum">
+                <label for="mobilenum">Mobile Number</label>
+            </div>
+            <div class="form-input">
+                <span class="error"></span>
+                <input class="form-input-field" type="date" name="date" id="date">
+                <label for="date" name="mobnumb" id="">Date</label>    
+            </div>
+            <div class="form-input">
+                <input type="submit" name="date" id="submit-btn">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../js/header.js"></script>
+    <script src="../js/Validate.js"></script>
+    <script src="../js/promise.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.register{
+    width: 400px;
+    padding: 40px;
+    margin: 20px auto;
+    background-color: rgb(35, 30, 45);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+    border-radius: 5px;
+}
+
+.form-input{
+    padding: 8px;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.form-input > input{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 0 0 0 10px;
+    color: rgb(224, 224, 224);
+    border: 1px solid rgb(58, 48, 78);
+    background: transparent;
+    transition: 0.2s ease;
+}
+
+.password-strength{
+    position: absolute;
+    height: 4px;
+    width: 0px;
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(22, 255, 92);
+    transition: 0.2s ease-in-out;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.form-input > input:hover,
+.form-input > input:focus{
+    border: 1px solid rgb(182, 182, 182);
+    transition: 0.2s ease;
+} 
+
+.form-input > span{
+    padding: 4px;
+    font-size: 15px;
+    color: rgb(255, 64, 64);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-input > label{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+}
+
+#submit-btn{
+    color: white;   
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0 0 0;
+    background-color: blueviolet;
+}
+
+@media only screen and (max-width: 750px) {
+    .register{
+        width: 100%;
+        min-height: 100%;
+        padding: 0px;
+        margin: 0px;
+    } 
+}
