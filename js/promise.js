@@ -14,8 +14,6 @@ logoContainer.addEventListener("click", () => {
     let newLogo = new Promise((resolve, reject) =>{
         let colorRGB = newColor();
         logoColor.style.color = colorRGB;
-
-
         if(logoColor.style.color == colorRGB){
             resolve("color changed");
         }else{

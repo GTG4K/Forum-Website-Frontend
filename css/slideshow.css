@@ -17,6 +17,77 @@
     transition: opacity 0.5s ease-in-out;
     /* display: none; */
 }
+.slideshow > .left{
+    position: absolute;
+    left: 0;
+    width: 24%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    transition: 0.2s ease;
+}
+.slideshow > .left:hover{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    transition: 0.2s ease;
+}
+.slideshow > .right{
+    position: absolute;
+    right: 0;
+    width: 24%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))
+}
+.slideshow > .right:hover{
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    transition: 0.2s ease;
+}
+
+.radio-buttons{
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+}
+
+.radio-button{
+    position: relative;
+    display: block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(36, 34, 42);
+    border-radius: 6px;
+    border: solid 2px rgb(123, 75, 255);
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+    transition: 0.2s;
+}
+.radio-button:hover{
+    border: solid 2px rgb(201, 181, 255);
+    background-color: rgb(39, 35, 49);
+    transition: 0.2s;
+}
+.radio-button>input{
+    display: none;
+}
+.radio-button.checked .checkmark{
+    display: block;
+}
+.checkmark{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-color: rgb(85, 55, 170);
+    border-radius: 3px;
+}
 
 @media only screen and (max-width: 1000px) {
     .slideshow{
